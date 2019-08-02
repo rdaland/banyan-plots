@@ -1,0 +1,31 @@
+{
+  "prefix": "",
+  "count": 100,
+  "child": [
+    {
+      "prefix": "phone",
+      "count": 30,
+      "child": []
+    },
+    {
+      "prefix": "sms",
+      "count": 25,
+      "child": []
+    },
+    {
+      "prefix": "media",
+      "count": 150,
+      "child": []
+    },
+    {
+      "prefix": "encyclopedia",
+      "count": 20,
+      "child": []
+    },
+    {
+      "prefix": "translation",
+      "count": 10,
+      "child": []
+    }
+  ]
+}
