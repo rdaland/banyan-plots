@@ -3,15 +3,22 @@ import logging
 
 logging.basicConfig(level=logging.INFO)
 
-def node(prefix, count, child):
-    return {'prefix': prefix, 'count': count, 'child': child}
+def node(label, count=None, child=None):
+    node = {'label': label}
+    node['child'] = child or []
+    node['count'] = count or sum([child['count'] for child in node['child']])
+    return node
 
-x1 = node(prefix='phone', count=30, child=[])
-x2 = node(prefix='sms', count=25, child=[])
-x3 = node(prefix='media', count=150, child=[])
-x4 = node(prefix='encyclopedia', count=20, child=[])
-x5 = node(prefix='translation', count=10, child=[])
-x = node(prefix='', count=100, child=[x1, x2, x3, x4, x5])
+x11 = node(label='call', count=29)
+x12 = node(label='callback', count=1)
+x1 = node(label='phone', child=[x11, x12])
+
+x2 = node(label='sms', count=25)
+x3 = node(label='media', count=150)
+x4 = node(label='encyclopedia', count=20)
+x5 = node(label='translation', count=10)
+
+x = node(label='', count=None, child=[x1, x2, x3, x4, x5])
 logging.info('created node')
 
 with open('mangrove1.json', 'w') as fout:
