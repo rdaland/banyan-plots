@@ -1,0 +1,42 @@
+{
+  "label": "",
+  "child": [
+    {
+      "label": "phone",
+      "child": [
+        {
+          "label": "call",
+          "child": [],
+          "count": 29
+        },
+        {
+          "label": "callback",
+          "child": [],
+          "count": 1
+        }
+      ],
+      "count": 30
+    },
+    {
+      "label": "sms",
+      "child": [],
+      "count": 25
+    },
+    {
+      "label": "media",
+      "child": [],
+      "count": 150
+    },
+    {
+      "label": "encyclopedia",
+      "child": [],
+      "count": 20
+    },
+    {
+      "label": "translation",
+      "child": [],
+      "count": 10
+    }
+  ],
+  "count": 235
+}

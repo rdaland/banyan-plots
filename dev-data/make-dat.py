@@ -3,6 +3,8 @@ import logging
 
 logging.basicConfig(level=logging.INFO)
 
+DATA_FILE = "banyan1.json"
+
 def node(label, count=None, child=None):
     node = {'label': label}
     node['child'] = child or []
@@ -21,8 +23,8 @@ x5 = node(label='translation', count=10)
 x = node(label='', count=None, child=[x1, x2, x3, x4, x5])
 logging.info('created node')
 
-with open('mangrove1.json', 'w') as fout:
+with open(DATA_FILE, 'w') as fout:
     fout.write(json.dumps(x, indent=2))
-logging.info('wrote to file mangrove1.json')
+logging.info('wrote to file ' + DATA_FILE)
 
 
