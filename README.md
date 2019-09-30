@@ -1,4 +1,4 @@
-# mangrove-plots
+# banyan-plots
 a package for visualizing statistics over hierarchically structured data
 
 ## What is a banyan plot?
